@@ -1,0 +1,27 @@
+{
+   "algo_name": "PEARL",
+   "ml": -1,
+   "env_name": "ant-dir",
+    "n_train_tasks": 2,
+    "n_eval_tasks": 2,
+    "env_params": {
+        "n_tasks": 2,
+	"forward_backward": true
+    }
+    ,
+    "algo_params": {
+	"validation_outputs": [true,false,true,false,true,false,false,false,false,true],
+	"reward_scale": 5,
+	"kl_lambda": 0.1,
+	"num_iterations": 801,
+        "meta_batch": 4,
+	"num_tasks_sample": 8,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 600,
+        "num_train_steps_per_itr": 2000,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256
+    }
+}

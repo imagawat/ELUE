@@ -1,0 +1,39 @@
+{
+    "algo_name": "ELUE",
+    "ml": -1,
+    "env_name": "humanoid-dir",
+    "n_train_tasks": 40,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 50
+    }
+    ,
+    "algo_params": {
+	"eval_interval": 4,
+	"num_iterations": 401,
+        "num_initial_steps": 2000,
+	"num_tasks_sample": 4,
+        "num_train_steps_per_itr": 1000,
+        "num_embedding_train_steps_per_itr": 500,
+	"batch_size": 256,
+	"num_steps": 1000,
+	"num_sampled_z": 2,
+	"num_context_per_train_step": 2,
+	"rand_length_train_rate": 10,
+	"reset_belief_rate": 8,
+	"max_context_length": 128,
+	"representation_dim": 32,
+	"reward_scale": 50,
+	"latent_size": 5,
+	"kl_lambda": 1,
+	"entropy_coeff":0,
+	"naive_bottleneck": false,
+	"bottleneck_size": 256,
+	"bottleneck_layerid": 3,
+	"uniform_variational_dist_for_bottleneck" : true,
+	"mean_bottleneck_loss" : true,
+	"q_bottleneck_coeff": 0.001,
+	"v_bottleneck_coeff": 0.001,
+	"pi_bottleneck_coeff": 0.01
+    }
+}

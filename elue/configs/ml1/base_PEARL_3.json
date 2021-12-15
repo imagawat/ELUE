@@ -1,0 +1,19 @@
+{
+    "ml": 1,
+    "algo_name":"PEARL",
+    "env_name": "",
+    "n_train_tasks": 20,
+    "algo_params": {
+	"net_size": 300,
+        "num_iterations": 401,
+        "num_initial_steps": 2000,
+	"num_tasks_sample": 8,
+        "num_steps_prior": 200,
+        "num_extra_rl_steps_posterior": 600,
+        "num_train_steps_per_itr": 2000,
+        "batch_size": 128,
+        "max_context_length": 64,
+	"entropy_coeff": 0.01,
+        "kl_lambda": 1.0
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "algo_name": "PEARL",
+    "n_eval_tasks": 1,
+    "algo_params": {
+	"num_iterations": 2001,
+	"meta_batch": 1,
+	"num_tasks_sample": 1,
+        "num_train_steps_per_itr":200,
+	"num_initial_steps": 20000,
+        "num_steps_prior": 0,
+        "num_extra_rl_steps_posterior": 0,
+        "num_steps_posterior": 800,
+	"batch_size": 1024
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ml": 1,
+    "algo_name": "ELUE",
+    "env_name": "pick-place-v1",
+    "n_train_tasks": 20,
+    "algo_params":
+    {
+	"net_size": 300,
+	"meta_batch": -1,
+	"num_iterations": 401,
+	"num_initial_steps": 2000,
+	"num_tasks_sample": 8,
+	"num_steps": 800,
+	"num_train_steps_per_itr": 2000,
+	"batch_size": 128,
+	"num_sampled_z": 2,
+	"num_context_per_train_step": 2,
+	"rand_length_train_rate": 10,
+	"reset_belief_rate": 4,
+	"max_context_length": 64,
+	"representation_dim": 32,
+	"latent_size": 5,
+	"kl_lambda": 1.0,
+	"entropy_coeff":1,
+	"bottleneck_layerid": -1,
+	"q_bottleneck_coeff": 0,
+	"v_bottleneck_coeff": 0,
+	"pi_bottleneck_coeff": 0
+    }
+}

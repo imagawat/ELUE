@@ -1,0 +1,33 @@
+{
+    "ml": 10,
+    "algo_name":"ELUE",
+    "n_train_tasks": 40,
+    "num_processes": 1,
+    "algo_params": {
+	"latent_size": 15,
+        "net_size": 300,
+        "meta_batch": -1,
+        "num_iterations": 801,
+        "num_initial_steps": 2000,
+        "num_tasks_sample": 20,
+        "num_steps": 2000,
+        "num_embedding_train_steps_per_itr":1000,
+        "num_train_steps_per_itr": 2000,
+        "batch_size": 128,
+        "num_sampled_z": 2,
+        "num_context_per_train_step": 2,
+        "reset_belief_rate": 8,
+        "max_context_length": 128,
+        "rand_length_train_rate": 10,
+	"kl_lambda": 0.1,
+	"entropy_coeff":0,
+	"naive_bottleneck": false,
+	"bottleneck_size": 256,
+	"bottleneck_layerid": 3,
+	"uniform_variational_dist_for_bottleneck" : true,
+	"q_bottleneck_coeff": 0.01,
+	"v_bottleneck_coeff": 0.01,
+	"pi_bottleneck_coeff": 0.01
+
+    }
+}

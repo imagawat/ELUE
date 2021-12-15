@@ -1,0 +1,14 @@
+{
+    "n_eval_tasks": 1,
+    "algo_params": {
+	"num_iterations": 2001,
+	"meta_batch": 1,
+	"num_tasks_sample": 1,
+        "num_train_steps_per_itr":200,
+	"num_initial_steps": 20000,
+        "num_steps": 800,
+	"batch_size": 1028,
+	"fix_context_at_eval": false,
+        "learning_type_at_eval": 3
+    }
+}
